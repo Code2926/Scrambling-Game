@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+.container {
+    width: 440px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 16px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .content {
+    padding: 25px 20px 35px;
+}
+
+.content .word {
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 24px;
+    word-break: break-all;
+    text-transform: uppercase;
+}
+
+.details {
+    margin: 25px 0 20px;
+}
+
+.details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p b {
+    font-weight: 500;
+}
+
+.content input {
+    width: 100%;
+    height: 60px;
+    padding: 0 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+
+.content input:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.content input::placeholder {
+    color: #aaa;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.buttons button {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 10px;
+    flex: 1;
+    transition: color 0.3s ease-in-out, background-color 0.5s ease;
+}
+
+.buttons button:active {
+    transform: scale(0.97);
+}
+
+.buttons .refresh-word {
+    background: #6C757D;
+}
+
+.buttons .refresh-word:hover {
+    background: #eb0404;
+}
+
+.buttons .check-word {
+    background: #5372F0;
+}
+
+.buttons .check-word:hover {
+    background: #2ced46;
+}
+
+@media screen and (max-width: 470px) {
+    .container h2 {
+        font-size: 22px;
+        padding: 13px 20px;
+    }
+
+    .content .word {
+        font-size: 30px;
+        letter-spacing: 20px;
+    }
+
+    .content input {
+        height: 55px;
+        font-size: 17px;
+    }
+
+    .buttons button {
+        padding: 14px 0;
+        font-size: 16px;
+    }
+}
