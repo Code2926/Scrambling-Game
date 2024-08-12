@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Scramble game</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="white_on_trans.png" type="image/svg+xml">
+    <link rel="icon" href="logo.png" type="image/svg+xml">
 </head>
 <body>
+    <div id="loading-container" class="loading-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="loading-text">Loading...</div>
+    </div>
     <div class="container">
         <h2>Word Scramble</h2>
         <div class="content">
@@ -26,6 +30,28 @@
         </div>
     </div>
     <script src="script.js" defer></script>
+    <script>
+        // Set a minimum display time for the loading screen
+        const minLoadingTime = 5000; // 5000 milliseconds = 5 seconds
+        const loadingStartTime = new Date().getTime();
+
+        window.addEventListener('load', function() {
+            const currentTime = new Date().getTime();
+            const elapsedTime = currentTime - loadingStartTime;
+            const remainingTime = minLoadingTime - elapsedTime;
+
+            if (remainingTime > 0) {
+                setTimeout(hideLoadingScreen, remainingTime);
+            } else {
+                hideLoadingScreen();
+            }
+        });
+
+        function hideLoadingScreen() {
+            document.getElementById('loading-container').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
