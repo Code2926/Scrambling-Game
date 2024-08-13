@@ -1,15 +1,19 @@
 # Word Scramble Game
+---------
 
 Welcome to the Word Scramble Game! This is a fun and interactive game where players are given scrambled words and must guess the correct words based on hints provided.
 
 ## Table of Contents
+---------
 
 - [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact](#contact)
 
 ## Usage
+---------
 
 - Upon opening the game, you will see a loading screen. The game will automatically start after a few seconds.
 - The game will display a scrambled word and a hint.
@@ -17,6 +21,7 @@ Welcome to the Word Scramble Game! This is a fun and interactive game where play
 - Click "Refresh Word" to get a new scrambled word.
 
 ## Features
+---------
 
 - A collection of words with corresponding hints.
 - A timer for each word challenge.
@@ -24,6 +29,7 @@ Welcome to the Word Scramble Game! This is a fun and interactive game where play
 - Animations and effects for a dynamic user experience.
 
 ## Contributing
+---------
 
 Contributions are welcome! Please follow these steps to contribute:
 
@@ -34,6 +40,7 @@ Contributions are welcome! Please follow these steps to contribute:
 5. Open a pull request.
 
 ## License
+---------
 
 This project is licensed under the [MIT License](LICENSE).
 
